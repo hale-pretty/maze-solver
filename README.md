@@ -1,1 +1,3 @@
 # maze-solver
+
+## goal
