@@ -15,6 +15,9 @@ class Window:
     def redraw(self) -> None:
         self.rootWidget.update_idletasks()
         self.rootWidget.update()
+
+    def draw_line(self, line: Line, fill_color: str) -> None:
+        line.draw(self.canvasWidget, fill_color)
         
     def wait_for_close(self):
         self.isRunning = True
@@ -24,8 +27,6 @@ class Window:
     def close(self):
         self.isRunning = False
 
-    def draw_line(self, line: Line, fill_color: str) -> None:
-        line.draw(self.canvasWidget, fill_color)
         
 
         
